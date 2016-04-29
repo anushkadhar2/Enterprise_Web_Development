@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ <html >
+<head>
+<meta charset="utf-8">
+<title>LOGIN FORM FOR MANAGER</title>
+<link rel="stylesheet" type="text/css" href="loginStyle.css" />
+</head>
+<body>
+<div class="container">
+  <div class="login">
+    <h3> Use the values being shown </h3>
+    <form method="post" action="LoginServlet.jsp">
+	   Manager  : <input type = "text" name = "userType" value = "Manager" readonly>
+      <p>UserName:<input type="text" name="email" value="manager" ></p>
+      <p>Password:<input type="password" name="password" value="manager"></p>
+      
+      <p class="submit"><input type="submit" name="commit" value="Login"></p>
+    </form>
+  </div>
+ 
+  
+</div> 
+</body>
+</html>

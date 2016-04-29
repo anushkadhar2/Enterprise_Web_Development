@@ -1,0 +1,224 @@
+<!doctype html>
+
+<!-- INDEX -->
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CSP 595 - Tutorial 2</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body onload="init()">
+<div id="container">
+    <header>
+    	<h1><a href="/">Best<span>Deals</span></a></h1>
+        <h2>This is an Online Store</h2>
+    </header>
+	<form name="autofillform" action="autocomplete">
+      <table border="0" cellpadding="5"> 
+        <tbody>
+          <tr>
+            <td><strong>Search Product:</strong></td>
+                        <td>
+                            <input type="text"
+                       size="40" 
+                       id="complete-field"
+                                   onkeyup="doCompletion()">
+                        </td>
+          </tr>
+          <tr>
+              <td id="auto-row" colspan="2">
+                <table id="complete-table" class="popupBox" />
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <nav>
+    	<ul>
+        	<li class="start selected"><a href="index.html">Home</a></li>
+            <li class=""><a href="Microsoft">Microsoft</a></li>
+            <li class=""><a href="Sony">Sony</a></li>
+			<li class=""><a href="Nintendo">Nintendo</a></li>
+            <li class="end"><a href="Accessories">Accessories</a></li>
+			<li class="end"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+	<img class="header-image" src="images/img_index1.jpg" width = "100%" height = "100%" alt="Index Page Image" />
+
+    <div id="body">		
+
+	<section id="content">
+
+	    <article>
+			
+			<h2>Welcome to Best Deals Store</h2>
+			
+            <p>We sell games here. </p>	
+            
+            <p>Our Main Manufactures are Microsoft, Sony and Nintendo.</p>
+			
+		</article>
+	
+		
+    </section>
+	
+	<section id="content">
+
+	    <article>
+			
+			<form method="post" action="LoginServlet">
+	       
+	  
+		    <table>
+		
+			<tr>
+				
+				<td>User ID</td>
+				<td><input type="TEXT" size="15" name="userid"></input></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="PASSWORD" size="15" name="password"/></td>
+			</tr>
+			<tr>
+				<td>User Type</td>
+				<td><input type="text" size="15" name="usertype" value="customer" readonly/></td>
+			</tr>
+			<tr>
+				<td colspan='2'>
+					<center><input type="submit" value="Login" name="userLogin" /></center>
+				</td>
+			</tr>
+			</table>
+	</form>
+	
+	<form method="post" action="LoginServlet">
+	<table>
+	<tr>
+		
+        <td>User ID</td>
+        <td><input type="TEXT" size="15" name="userid"></input></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="PASSWORD" size="15" name="password"/></td>
+    </tr>
+	<tr>
+				<td>User Type</td>
+				<td><input type="text" size="15" name="usertype" value="salesman" readonly/></td>
+			</tr>
+    <tr>
+        <td colspan='2'>
+            <center><input type="submit" value="Login" name="userLogin" /></center>
+        </td>
+    </tr>
+	
+	</table>
+	</form>
+	<form method="post" action="LoginServlet">
+	<table>
+	<tr>
+		
+        <td>User ID</td>
+        <td><input type="TEXT" size="15" name="userid"></input></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="PASSWORD" size="15" name="password"/></td>
+    </tr>
+	<tr>
+				<td>User Type</td>
+				<td><input type="text" size="15" name="userType" value="storemanager" readonly/></td>
+			</tr>
+    <tr>
+        <td colspan='2'>
+            <center><input type="submit" value="Login" name="userLogin" /></center>
+        </td>
+    </tr>
+	
+    </table>
+ </form>
+			
+		</article>
+	
+    </section>
+        
+    <aside class="sidebar">
+	
+            <ul>	
+               <li>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="XBox.html">XBox</a></li>
+                        <li><a href="PlayStation.html">Play Station</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    
+                    </ul>
+                </li>
+                
+                <li>
+                    <h4>About us</h4>
+                    <ul>
+                        <li class="text">
+                        	<p style="margin: 0;">This is an Online Store</p>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<h4>Search site</h4>
+                    <ul>
+                    	<li class="text">
+                            <form method="get" class="searchform" action="#" >
+                                <p>
+                                    <input type="text" size="25" value="" name="s" class="s" />
+                                    
+                                </p>
+                            </form>	
+						</li>
+					</ul>
+                </li>
+                
+                <li>
+                    <h4>Helpful Links</h4>
+                    <ul>
+                        <li><a href="http://www.w3schools.com/html/default.asp" title="premium templates">Learn HTML here</a></li>
+                        <li><a href="http://www.w3schools.com/css/default.asp" title="web hosting">Learn CSS here</a></li>
+                        
+                    </ul>
+                </li>
+                
+            </ul>
+		
+    </aside>
+    
+	<div class="clear"></div>
+	</div>
+    
+	<footer>
+	
+        <div class="footer-content">
+            <ul>
+            	<li><h4>Dummy Link Section 1</h4></li>
+                <li><a href="#">Dummy Link 1</a></li>
+                <li><a href="#">Dummy Link 2</a></li>
+                <li><a href="#">Dummy Link  3</a></li>
+			</ul>
+           
+        <div class="clear"></div>
+        </div>
+		
+        <div class="footer-bottom">
+            <p>CSP 595 - Enterprise Web Application</p>
+        </div>
+		
+    </footer>
+</div>
+
+</body>
+
+</html>

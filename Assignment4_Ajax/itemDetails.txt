@@ -1,0 +1,7 @@
+Mic111-[Xbox_Original, 300, Microsoft]
+Mic100-[Xbox_One, 400, Microsoft]
+Son111-[PlayStation_3, 100, Sony]
+Son126-[PlayStation_4, 600, Sony]
+Nin100-[Wii, 400, Nintendo]
+Acc111-[Cover, 600, Accessories]
+Acc201-[Cover, 400, Accessories]
